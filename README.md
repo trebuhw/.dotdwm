@@ -5,7 +5,7 @@
 - `super=win` `ModKey4` - default
 - `super + shift + ?` = show `Keybindings`
 - `super + enter` = terminal `ghostty`
-- `super + shift + return` = web browser `chromium`
+- `super + shift + return` = web browser `google-chrome`
 - `super + space` = launcher `rofi`
 - `super + shift + space` = launcher `dmenu`
 - `super + escape` = launcher `rofi - powermenu`
