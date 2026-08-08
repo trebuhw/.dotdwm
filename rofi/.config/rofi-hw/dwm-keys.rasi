@@ -1,0 +1,23 @@
+/* ============================================================
+ * dwm-keys.rasi — nadpisuje tylko to co różni się od theme.rasi
+ * Instalacja: cp dwm-keys.rasi ~/.config/rofi/dwm-keys.rasi
+ * ============================================================ */
+
+@import "theme"
+
+/* w trybie dmenu nie ma ikon — ukryj miejsce na nie */
+element {
+    children:  [ element-text ];
+    padding:   2px 10px;
+    spacing:   0;
+}
+
+/* więcej wierszy bo lista skrótów jest długa */
+listview {
+    lines: 18;
+}
+
+/* placeholder dopasowany do kontekstu */
+entry {
+    placeholder: "szukaj skrótu...";
+}

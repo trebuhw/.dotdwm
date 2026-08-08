@@ -1,0 +1,14 @@
+[filemanager]
+# Zaznacz wszystko / odznacz wszystko (dialog z wzorcem *)
+Select = kpplus; alt-plus; ctrl-a
+Unselect = kpminus; alt-minus; ctrl-d
+
+# Ulubione katalogi (hotlist) - domyślnie Ctrl+\, dodajemy alternatywę
+HotList = ctrl-backslash; ctrl-y
+
+[panel]
+# Zaznacz/odznacz pojedynczy plik (domyślne klawisze, bez space - blokowało pisanie w linii poleceń)
+Mark = insert; ctrl-t
+
+# Nowy plik (otwiera edytor z pustym plikiem do zapisania pod nazwą)
+EditNew = f14; ctrl-e

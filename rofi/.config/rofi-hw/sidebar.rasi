@@ -1,0 +1,94 @@
+/* ============================================================
+ * sidebar.rasi — layout sidebar, Catppuccin Mocha
+ * Instalacja: cp sidebar.rasi ~/.config/rofi/sidebar.rasi
+ * ============================================================ */
+
+* {
+    background:     #1e1e2e;   /* Base */
+    foreground:     #cdd6f4;   /* Text */
+    bg-selected:    #45475a;   /* Surface1 */
+    grey:           #585b70;   /* Surface2 */
+    accent:         #89b4fa;   /* Blue */
+
+    /* GLOBALNA czcionka — rofi czyta ją stąd dla wszystkich widgetów */
+    font:               "JetBrainsMono Nerd Font 11";
+    background-color:   transparent;
+    text-color:         @foreground;
+
+    spacing: 0;
+    margin:  0;
+    padding: 0;
+}
+
+window {
+    background-color: @background;
+    border:           0;
+    location:         west;
+    anchor:           west;
+    height:           100%;
+    width:            380px;
+}
+
+mainbox {
+    background-color: @background;
+    children:         [ inputbar, listview ];
+    spacing:          0;
+}
+
+inputbar {
+    background-color: @background;
+    children:         [ prompt, entry ];
+    padding:          10px 8px;
+    spacing:          4px;
+}
+
+prompt {
+    background-color: @background;
+    text-color:       @accent;
+    /* font dziedziczony z * — nadpisanie jest opcjonalne */
+}
+
+entry {
+    background-color: @background;
+    text-color:       @foreground;
+    placeholder:      "Szukaj...";
+    placeholder-color: @grey;
+    cursor-color:     @accent;
+    expand:           true;
+}
+
+listview {
+    background-color: @background;
+    fixed-height:     true;
+    lines:            15;
+    padding:          6px 0 0 0;
+    scrollbar:        false;
+    spacing:          0;
+}
+
+element {
+    background-color: @background;
+    text-color:       @foreground;
+    children:         [ element-icon, element-text ];
+    orientation:      horizontal;
+    padding:          6px 10px;
+    spacing:          8px;
+}
+
+element-icon {
+    background-color: inherit;
+    size:             20px;
+    vertical-align:   0.5;
+}
+
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+    vertical-align:   0.5;
+    highlight:        bold;
+}
+
+/* stany elementów */
+element normal.normal   { background-color: @background;  text-color: @foreground; }
+element selected.normal { background-color: @bg-selected; text-color: @accent;     }
+element alternate.normal { background-color: @background; text-color: @foreground; }

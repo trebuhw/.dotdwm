@@ -1,0 +1,24 @@
+/* ============================================================
+ * window-switcher.rasi — nadpisuje tylko to co różni się od theme.rasi
+ * Instalacja: cp window-switcher.rasi ~/.config/rofi/window-switcher.rasi
+ * ============================================================ */
+
+@import "theme"
+
+/* ramka dziedziczona z global theme.rasi - nic tu nie trzeba nadpisywać */
+
+/* bez ikon aplikacji (nie rozpoznają się w icon-theme) - ukrywamy
+   miejsce na nie, tak jak w dwm-keys.rasi, i ustawiamy jawny,
+   równy odstęp tekstu od lewej i prawej krawędzi (10px / 10px) */
+element {
+    children: [ element-text ];
+}
+
+element-text {
+    padding: 10px 20px;
+}
+
+/* więcej wierszy widocznych naraz */
+listview {
+    lines: 10;
+}

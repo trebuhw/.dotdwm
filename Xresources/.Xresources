@@ -1,0 +1,51 @@
+
+!!st.alpha: 0.9
+st.alpha: 1.0
+! st.alphaOffset: 1.0
+
+!! Set a default font and font size as below:
+st.font: JetBrainsMono Nerd Font:size=12
+
+!! Cursor theme & size
+!! Xcursor.theme: Bibata-Modern-Ice
+!! Xcursor.size: 20
+
+! st.termname: st-256color
+! st.borderpx: 2
+
+!! Set the background, foreground and cursor colors as below:
+
+!! Catppuccin Mocha theme
+!! Catppuccin Mocha theme
+st.background:   #1e1e2e
+st.foreground:   #cdd6f4
+st.cursorColor:  #cdd6f4
+
+st.color0:  #1e1e2e
+st.color8:  #6c7086
+st.color1:  #f38ba8
+st.color9:  #f38ba8
+st.color2:  #a6e3a1
+st.color10: #a6e3a1
+st.color3:  #f9e2af
+st.color11: #fab387
+st.color4:  #89b4fa
+st.color12: #89b4fa
+st.color5:  #cba4f7
+st.color13: #f5c2e7
+st.color6:  #94e2d5
+st.color14: #89dceb
+st.color7:  #bac2de
+st.color15: #cdd6f4
+
+!! Sxiv
+Sxiv.background: #1E1E2E
+Sxiv.foreground: #CDD6F4
+Sxiv.font: JetBrainsMono Nerd Font:size=10
+
+! ------------------------------------------------------------------------------
+! xterm theme
+! xrdb ~/.Xresources - load file
+! xrdb -merge ~/.Xresources - reload file
+! ------------------------------------------------------------------------------
+

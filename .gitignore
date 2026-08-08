@@ -1,18 +1,50 @@
-# This .gitignore is appropriate for repositories deployed to GitHub Pages and using
-# a Gemfile as specified at https://github.com/github/pages-gem#conventional
+# Skompilowane artefakty suckless (dwm/st/dmenu/slstatus)
+# Pełne ścieżki od roota repo, żeby NIE dopasować katalogów o tej samej nazwie
+/suckless/.config/suckless/dwm/dwm
+/suckless/.config/suckless/st/st
+/suckless/.config/suckless/dmenu/dmenu
+/suckless/.config/suckless/dmenu/stest
+/suckless/.config/suckless/slstatus/slstatus
 
-# Basic Jekyll gitignores (synchronize to Jekyll.gitignore)
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+# config.h jest zawsze regenerowany z config.def.h (usuwany przed make) -
+# realną konfiguracją, którą edytujesz, jest config.def.h, nie config.h
+/suckless/.config/suckless/dwm/config.h
+/suckless/.config/suckless/st/config.h
+/suckless/.config/suckless/dmenu/config.h
+/suckless/.config/suckless/slstatus/config.h
 
-# Additional Ruby/bundler ignore for when you run: bundle install
-/vendor
+# Pliki pośrednie kompilacji (.o) - bezpieczny wzorzec, żaden katalog w repo
+# nie nazywa się "*.o", więc to nie ryzykuje wykluczenia czegoś innego
+*.o
 
-# Specific ignore for GitHub Pages
-# GitHub Pages will always use its own deployed version of pages-gem
-# This means GitHub Pages will NOT use your Gemfile.lock and therefore it is
-# counterproductive to check this file into the repository.
-# Details at https://github.com/github/pages-gem/issues/768
-Gemfile.lock
+# Tarball dystrybucyjny tworzony przez "make dist" (potwierdzone regułą
+# clean: w Makefile) - ograniczone do folderu suckless, żeby nie dotknąć
+# reszty repo
+/suckless/.config/suckless/*/*.tar.gz
+
+# --- Uniwersalne śmieci edytorów/systemu ---
+*.swp
+*.swo
+*~
+.netrwhist
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Cache narzędzi ---
+.cache/
+__pycache__/
+*.pyc
+
+# --- Sekrety / dane wrażliwe (ochrona na wszelki wypadek) ---
+.env
+.env.*
+*.pem
+*.key
+*_rsa
+*_ed25519
+credentials.json
+secrets.yaml
+secrets.yml
+*.credentials
+.git-credentials

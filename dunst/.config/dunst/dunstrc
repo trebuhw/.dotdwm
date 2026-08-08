@@ -1,0 +1,92 @@
+[global]
+    ### Display ###
+    monitor = 0
+    follow = none
+
+    ### Geometry ###
+    # Szerokość od 0 do 300 pikseli
+    width = (0, 300)
+    # Wysokość powiadomienia (0, 300) to tryb dynamiczny
+    height = (0, 300)
+    
+    origin = top-right
+    # Nowa składnia offsetu (X, Y)
+    offset = (10, 33)
+    
+    scale = 0
+    notification_limit = 20
+
+    ### Progress bar ###
+    progress_bar = true
+    progress_bar_height = 10
+    progress_bar_frame_width = 1
+    progress_bar_min_width = 150
+    progress_bar_max_width = 300
+    progress_bar_corner_radius = 0
+    icon_corner_radius = 0
+
+    indicate_hidden = yes
+    transparency = 0
+    separator_height = 2
+    padding = 8
+    horizontal_padding = 8
+    text_icon_padding = 10
+    frame_width = 1
+    
+    # Kolory ramek i separatorów
+    frame_color = "#cdd6f4"
+    separator_color = frame
+
+    sort = yes
+    idle_threshold = 120
+
+    ### Text ###
+    font = JetBrainsMono Nerd Font 11
+    line_height = 0
+    markup = full
+    format = "<b>%s</b>\n%b"
+    alignment = left
+    vertical_alignment = center
+    show_age_threshold = 60
+    ellipsize = middle
+    ignore_newline = no
+    stack_duplicates = true
+    hide_duplicate_count = false
+    show_indicators = yes
+
+    ### Icons ###
+    enable_recursive_icon_lookup = true
+    # Jeśli nie masz Tela-circle, zamień na Adwaita
+    icon_theme = Colloid-Grey-Dracula-Dark
+    icon_position = left
+    min_icon_size = 32
+    max_icon_size = 128
+    icon_path = ~/.icons/Colloid-Grey-Dracula/status/16/:~/.icons/Colloid-Grey-Dracula/devices/16/
+
+    ### History ###
+    sticky_history = yes
+    history_length = 20
+
+    ### Misc/Advanced ###
+    dmenu = /usr/bin/dmenu -p dunst:
+    browser = /usr/bin/xdg-open
+    always_run_script = true
+    title = Dunst
+    class = Dunst
+    corner_radius = 0
+
+[urgency_low]
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    timeout = 5
+
+[urgency_normal]
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    timeout = 10
+
+[urgency_critical]
+    background = "#1e1e2e"
+    foreground = "#f38ba8"
+    frame_color = "#f38ba8"
+    timeout = 0

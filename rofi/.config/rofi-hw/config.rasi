@@ -1,0 +1,21 @@
+/* ============================================================
+ * config.rasi — globalna konfiguracja rofi
+ * Instalacja: cp config.rasi ~/.config/rofi/config.rasi
+ * ============================================================ */
+
+configuration {
+    modi:            "drun,run,window";
+    show-icons:      true;
+    icon-theme:      "Colloid-Grey-Dracula-Dark";
+    drun-display-format: "{name}";
+    display-drun:    " ";
+    display-run:     " ";
+    display-window:  " ";
+    sidebar-mode:    false;
+    matching:        "fuzzy";
+    sort:            true;
+    sorting-method:  "fzf";
+}
+
+@theme "theme"
+/*@theme "sidebar"*/

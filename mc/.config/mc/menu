@@ -1,0 +1,19 @@
+t    Otwórz bieżący katalog w Ghostty
+    ghostty --working-directory="%d" &
+
+c    Kopiuj pełną ścieżkę pliku
+    echo -n "%d/%f" | xclip -selection clipboard
+    notify-send "Skopiowano ścieżkę" "%d/%f"
+
+n    Kopiuj samą nazwę pliku
+    echo -n "%f" | xclip -selection clipboard
+    notify-send "Skopiowano nazwę" "%f"
+
+b    Kopia zapasowa pliku z datą (na początku)
+    f="%f"
+    stamp=$(date +%%Y-%%m-%%d_%%H%%M)
+    cd "%d" && cp -- "$f" "${stamp}_${f}"
+    notify-send "Backup utworzony" "${stamp}_${f}"
+
+k    Pokaż skróty klawiszowe mc (rofi)
+    ~/.config/mc/mc-keys.sh &

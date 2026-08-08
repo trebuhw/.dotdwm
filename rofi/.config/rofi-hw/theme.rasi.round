@@ -1,0 +1,142 @@
+/* ============================================================
+ * theme.rasi — globalny motyw rofi (Catppuccin Mocha)
+ * Instalacja:
+ *   cp theme.rasi ~/.config/rofi/theme.rasi
+ *   cp config.rasi ~/.config/rofi/config.rasi
+ *
+ * dwm-keys.rasi importuje ten plik przez: @import "theme"
+ * ============================================================ */
+
+* {
+    bg0:     #1e1e2e;   /* tło główne */
+    bg1:     #313244;   /* tło inputbar */
+    bg2:     #45475a;   /* zaznaczenie */
+    fg0:     #cdd6f4;   /* tekst główny */
+    fg1:     #a6adc8;   /* tekst drugorzędny */
+    accent:  #89b4fa;   /* niebieski akcent */
+    green:   #a6e3a1;
+    red:     #f38ba8;
+    yellow:  #f9e2af;
+
+    font:               "JetBrainsMono Nerd Font 12";
+    background-color:   transparent;
+    text-color:         @fg0;
+}
+
+window {
+    background-color: @bg0;
+    border:           2px solid;
+    border-color:     @accent;
+    border-radius:    10px;
+    padding:          0;
+    width:            680px;
+    location:         center;
+    anchor:           center;
+}
+
+mainbox {
+    background-color: transparent;
+    children:         [ inputbar, listview ];
+    spacing:          0;
+    padding:          0;
+}
+
+/* ── pasek wyszukiwania ── */
+inputbar {
+    background-color: @bg1;
+    border-radius:    10px 10px 0 0;
+    children:         [ prompt, entry, num-filtered-rows, case-indicator ];
+    padding:          10px 14px;
+    spacing:          6px;
+}
+
+prompt {
+    background-color: transparent;
+    text-color:       @accent;
+    font:             "JetBrainsMono Nerd Font Bold 12";
+}
+
+entry {
+    background-color: transparent;
+    text-color:       @fg0;
+    placeholder:      "szukaj...";
+    placeholder-color: @fg1;
+    cursor-color:     @accent;
+    expand:           true;
+}
+
+num-filtered-rows {
+    background-color: transparent;
+    text-color:       @fg1;
+    font:             "JetBrainsMono Nerd Font 11";
+    expand:           false;
+}
+
+case-indicator {
+    background-color: transparent;
+    text-color:       @yellow;
+    font:             "JetBrainsMono Nerd Font 12";
+}
+
+/* ── lista wyników ── */
+listview {
+    background-color: transparent;
+    border:           0;
+    columns:          1;
+    cycle:            true;
+    dynamic:          false;
+    fixed-height:     true;
+    layout:           vertical;
+    lines:            12;
+    padding:          6px 0;
+    scrollbar:        false;
+    spacing:          0;
+}
+
+element {
+    background-color: transparent;
+    border-radius:    6px;
+    children:         [ element-icon, element-text ];
+    margin:           0 6px;
+    orientation:      horizontal;
+    padding:          5px 10px;
+    spacing:          10px;
+}
+
+element-icon {
+    background-color: transparent;
+    size:             1.2em;
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       inherit;
+    font:             "JetBrainsMono Nerd Font 12";
+    highlight:        bold;
+    vertical-align:   0.5;
+}
+
+/* stany elementów */
+element normal.normal  { background-color: transparent; text-color: @fg0;  }
+element normal.urgent  { background-color: @red;        text-color: @bg0;  }
+element normal.active  { background-color: transparent; text-color: @green;}
+
+element selected.normal { background-color: @bg2; text-color: @accent; }
+element selected.urgent { background-color: @red; text-color: @bg0;   }
+element selected.active { background-color: @bg2; text-color: @green; }
+
+element alternate.normal { background-color: transparent; text-color: @fg0; }
+
+/* ── komunikaty ── */
+message {
+    background-color: @bg1;
+    border:           1px 0 0 0;
+    border-color:     @bg2;
+    padding:          6px 14px;
+}
+
+textbox {
+    background-color: transparent;
+    text-color:       @fg1;
+    font:             "JetBrainsMono Nerd Font 12";
+}

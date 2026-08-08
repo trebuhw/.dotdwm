@@ -1,0 +1,47 @@
+@import "share.rasi"
+
+/* Konfiguracja dla Wallpaper Picker */
+configuration {
+    show-icons: true;
+}
+
+window {
+    width: 1200px; /* wysokość dostosuje się automatycznie do 3 linii */
+    padding: 20px;
+    border: 2px;
+    border-color: @active;
+}
+
+entry {
+  placeholder:      "Szukaj...";
+}
+
+listview {
+    columns: 4;
+    lines: 3;
+    spacing: 20px;
+    padding: 20px;
+}
+
+element {
+    orientation: vertical;
+    padding: 20px;
+    border-radius: 2px;
+    background-color: transparent;
+}
+
+element selected {
+    background-color: @bg-alt; /* Delikatne tło */
+}
+
+element-icon {
+    size: 150px; /* Duże miniatury */
+    background-color: transparent;
+}
+
+element-text {
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+    background-color: transparent;
+    margin: 10px 0 0 0;
+}

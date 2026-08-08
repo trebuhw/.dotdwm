@@ -1,0 +1,99 @@
+# Dynamic theme colors
+# config-file = ?"~/.config/omarchy/current/theme/ghostty.conf"
+
+command = /usr/bin/fish
+
+# shell integration
+shell-integration = fish
+term = xterm-256color
+
+# fonts
+font-family = JetBrainsMono Nerd Font
+font-size = 12
+
+# theme
+theme = Catppuccin Mocha
+#theme = Adwaita Dark
+shell-integration-features = no-cursor,sudo,no-title,ssh-env
+
+# windows size
+window-height = 33
+window-width = 95
+
+# cursor
+cursor-style = bar
+cursor-style-blink = true
+cursor-color = cdd6f4
+
+# appearance
+window-theme = ghostty
+window-decoration = client
+# adjust-cell-height = 5%
+background-opacity = 1.0
+background-blur = true
+window-padding-balance = true
+# window-decoration = auto
+window-decoration = none
+alpha-blending = native
+resize-overlay = never
+gtk-toolbar-style = flat
+
+# mouse
+mouse-hide-while-typing = true
+mouse-scroll-multiplier = 2
+
+# keybindings
+keybind = alt+,=reload_config
+keybind = alt+x=close_surface
+
+keybind = alt+n=new_window
+
+# tabs 
+keybind = alt+ctrl+t=new_tab
+keybind = alt+ctrl+right=next_tab
+keybind = alt+ctrl+left=previous_tab
+keybind = alt+ctrl+comma=move_tab:-1
+keybind = alt+ctrl+period=move_tab:1
+
+# quick tab switch
+keybind = alt+1=goto_tab:1
+keybind = alt+2=goto_tab:2
+keybind = alt+3=goto_tab:3
+keybind = alt+4=goto_tab:4
+keybind = alt+5=goto_tab:5
+keybind = alt+6=goto_tab:6
+keybind = alt+7=goto_tab:7
+keybind = alt+8=goto_tab:8
+keybind = alt+9=goto_tab:9
+
+# split
+keybind = alt+right=new_split:right
+keybind = alt+left=new_split:left
+keybind = alt+up=new_split:up
+keybind = alt+down=new_split:down
+
+keybind = alt+shift+down=goto_split:bottom
+keybind = alt+shift+up=goto_split:top
+keybind = alt+shift+left=goto_split:left
+keybind = alt+shift+right=goto_split:right
+
+keybind = alt+z=toggle_split_zoom
+
+keybind = alt+e=equalize_splits
+
+# other
+copy-on-select = clipboard
+
+# enable link ctrl+ppm
+link-url = true
+
+# notifications
+app-notifications = no-clipboard-copy
+
+# close ghostty
+confirm-close-surface = false
+quit-after-last-window-closed = true
+
+# Fix general slowness on hyprland (https://github.com/ghostty-org/ghostty/discussions/3224)
+async-backend = epoll
+

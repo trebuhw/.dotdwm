@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=dwm
+Comment=Dynamic window manager
+#Exec=/usr/local/bin/dwm
+Exec=/usr/local/bin/start-dwm.sh
+Type=Application
+Icon=dwm
+Type=XSession
+X-LightDM-DesktopName=dwm

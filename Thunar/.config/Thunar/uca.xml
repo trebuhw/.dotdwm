@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<submenu></submenu>
+	<unique-id>1778347097972773-1</unique-id>
+	<command>bash -c &apos;ghostty --working-directory=&quot;$1&quot;&apos; _ %f</command>
+	<description>Example for a custom action</description>
+	<range></range>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>meld</icon>
+	<name>Porównaj (Meld)</name>
+	<submenu></submenu>
+	<unique-id>1779807313588026-1</unique-id>
+	<command>meld %F</command>
+	<description>Porównaj zaznaczone pliki/foldery</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+	<text-files/>
+</action>
+</actions>
