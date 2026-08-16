@@ -9,7 +9,7 @@
 
 window {
   transparency: "real";
-  width: 700px;
+  width: 600px;
 }
 
 mainbox {
@@ -34,7 +34,7 @@ prompt {
 }
 
 listview {
-  lines: 8;
+  lines: 10;
 }
 
 element {
