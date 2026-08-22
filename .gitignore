@@ -48,3 +48,5 @@ secrets.yaml
 secrets.yml
 *.credentials
 .git-credentials
+**/ghostty/themes/
+
