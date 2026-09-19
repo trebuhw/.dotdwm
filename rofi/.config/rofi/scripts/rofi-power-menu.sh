@@ -34,12 +34,12 @@ main_menu() {
   uptime=$(get_uptime)
 
   printf "%s\n%s\n%s\n%s\n%s\n%s\n" \
-    "$sleep_screen_icon" \
-    "$lock_icon" \
-    "$logout_icon" \
-    "$suspend_icon" \
+    "$shutdown_icon" \
     "$reboot_icon" \
-    "$shutdown_icon" |
+    "$logout_icon" \
+    "$lock_icon" \
+    "$suspend_icon" \
+    "$sleep_screen_icon" |
     rofi -dmenu \
       -p "Uptime: $uptime" \
       -mesg "Uptime: $uptime" \

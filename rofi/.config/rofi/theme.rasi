@@ -9,7 +9,7 @@
 
 window {
   transparency: "real";
-  width: 600px;
+  width: 700px;
 }
 
 mainbox {
