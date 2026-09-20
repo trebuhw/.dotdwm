@@ -19,6 +19,7 @@ entry {
 listview {
     columns: 4;
     lines: 3;
+    flow: horizontal;
     spacing: 20px;
     padding: 20px;
 }
