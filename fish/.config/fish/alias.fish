@@ -194,6 +194,7 @@ alias gbf='/usr/bin/git --git-dir=$HOME/.dotdwm/ --work-tree=$HOME fetch origin'
 
 # Fedora
 alias fv='cat /etc/fedora-release' # wersja systemu Fedora
+alias cpk='clean-rpm-gpg-pubkey' # zainstaluj "clean-rpm-gpg-pubkey" > czyści już ninepotrzebne pobrane klucze publiczne 
 
 # Dnf
 alias u='sudo dnf upgrade --refresh' # aktualizacja systemu z odświeżeniem repozytoriów
