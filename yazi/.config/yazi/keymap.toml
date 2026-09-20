@@ -84,9 +84,9 @@ keymap = [
 	{ on = "<C-s>",     run = "escape --search",             desc = "Cancel the ongoing search" },
 	{ on = "z",         run = "plugin zoxide",               desc = "Jump to a directory via zoxide" },
 	{ on = "Z",         run = "plugin fzf",                  desc = "Jump to a file/directory via fzf" },
-  { on = [ "W" ],     run = "shell 'ln -sf %h ~/Pictures/Wallpaper/!current.png && feh --bg-fill ~/Pictures/Wallpaper/!current.png'", desc = "copy img & set feh wallpaper" },
+  { on = [ "W" ],     run = "shell 'ln -sf %h ~/Obrazy/Wallpaper/!current.png && feh --bg-fill ~/Obrazy/Wallpaper/!current.png'", desc = "copy img & set feh wallpaper" },
 	{ on = [ "B" ],     run = "shell 'ln -sf %h ~/.bg && nohup swaybg -i ~/.bg -m fill </dev/null >/dev/null 2>&1 & disown'", desc = "copy img to ~/.bg & set swaybg wallpaper" },
-	{ on = [ "T", ],    run = "shell 'sxiv -t %h .'", desc = "Open nsxiv in thumbnail mode" },
+	{ on = [ "T", ],    run = "shell 'sxiv -t %h .'", desc = "Open sxiv in thumbnail mode" },
 	
 	# Linemode
 	{ on = [ "m", "s" ], run = "linemode size",        desc = "Linemode: size" },

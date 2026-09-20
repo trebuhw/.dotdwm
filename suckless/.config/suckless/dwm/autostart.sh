@@ -16,7 +16,7 @@ function run {
 
 # Ustawienia wyglądu
 xrdb -merge ~/.Xresources
-feh --bg-fill "$HOME/Pictures/Wallpaper/!current.png"
+feh --bg-fill "$HOME/Obrazy/Wallpaper/!current.png"
 
 # Bezpieczny restart kompozytora (eliminuje Race Condition)
 killall -q picom

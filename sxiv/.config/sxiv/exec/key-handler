@@ -33,8 +33,8 @@ case "$1" in
 "C-c") while read file; do xclip -selection clipboard -target image/png "$file"; done ;;
 "C-t") while read file; do cp "$file" "$HOME/.background" & done && ~/.config/hypr/scripts/swaybg-set-background.sh ;;
 "C-w")
-  while read file; do ln -sf "$file" "$HOME/Pictures/Wallpaper/!current.png"; done && pkill feh 2>/dev/null
-  feh --bg-fill ~/Pictures/Wallpaper/!current.png &
+  while read file; do ln -sf "$file" "$HOME/Obrazy/Wallpaper/!current.png"; done && pkill feh 2>/dev/null
+  feh --bg-fill ~/Obrazy/Wallpaper/!current.png &
   ;;
 "C-e") while read file; do urxvt -bg "#444" -fg "#eee" -sl 0 -title "$file" -e sh -c "exiv2 pr -q -pa '$file' | less" & done ;;
 "C-g") tr '\n' '\0' | xargs -0 gimp & ;;

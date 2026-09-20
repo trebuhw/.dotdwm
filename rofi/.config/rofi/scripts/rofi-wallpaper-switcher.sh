@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ROFI_CONFIG_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/rofi"
-WALL_DIR="$HOME/Pictures/Wallpaper"
+WALL_DIR="$HOME/Obrazy/Wallpaper"
 CACHE_DIR="$HOME/.cache/wallpaper-rofi"
 CURRENT_LINK="$WALL_DIR/!current.png"
 

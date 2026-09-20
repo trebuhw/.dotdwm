@@ -144,15 +144,16 @@ alias repho='rename-photos.sh' # skrypt do zmiany nazw zdjęć
 # Foldery / szybka nawigacja
 alias hom='cd $HOME/ && ls' # przejdź do katalogu domowego
 alias in='cd $HOME/!0\ Inbox/ && ls' # przejdź do folderu Inbox
-alias dok='cd $HOME/Documents/ && ls' # przejdź do folderu Dokumenty
-alias cno='cd $HOME/Documents/Notes/ && ls' # przejdź do folderu Dokumenty
+alias dok='cd $HOME/Dokumenty/ && ls' # przejdź do folderu Dokumenty
+alias cno='cd $HOME/Dokumenty/Notes/ && ls' # przejdź do folderu Dokumenty
 alias gh='cd $HOME/GitHub/ && ls' # przejdź do folderu GitHub
 alias ghm='cd $HOME/GitHub/Moje/ && ls' # przejdź do folderu z własnymi repozytoriami
 alias ghf='cd $HOME/GitHub/Moje/fedora/ && ls' # przejdź do folderu repozytorium fedora
 alias ghp='cd $HOME/GitHub/Pobrane/ && ls' # przejdź do folderu z pobranymi repozytoriami
-alias obr='cd $HOME/Pictures && ls' # przejdź do folderu Obrazy
-alias wal='cd $HOME/Pictures/Wallpaper && yazi' # przejdź do folderu Wallpaper i otwórz yazi
-alias muz='cd $HOME/Music && ls' # przejdź do folderu Muzyka
+alias obr='cd $HOME/Obrazy/ && ls' # przejdź do folderu Obrazy
+alias wal='cd $HOME/Obrazy/Wallpaper/ && yazi' # przejdź do folderu Wallpaper i otwórz yazi
+alias muz='cd $HOME/Muzyka/ && ls' # przejdź do folderu Muzyka
+alias pob='cd $HOME/Pobrane/ && ls' # przejdź do folderu Muzyka
 alias dot='cd $HOME/.dotdwm/ && ls' # przejdź do folderu dotfiles
 alias con='cd $HOME/.config && ls' # przejdź do folderu konfiguracji
 alias cbi='cd $HOME/.local/bin && ls' # przejdź do folderu z własnymi skryptami/binarkami
@@ -169,7 +170,6 @@ alias rs='rsync -av' # podstawowa synchronizacja: rekurencyjnie, z zachowaniem u
 alias rsd='rsync -av --delete' # jak wyżej, ale usuwa w celu pliki, których nie ma już w źródle (uważaj!)
 alias rsp='rsync -avP' # synchronizacja z paskiem postępu i możliwością wznowienia przerwanego transferu
 alias rsdry='rsync -avP --dry-run' # test na sucho - pokazuje co by się zsynchronizowało, bez kopiowania
-alias rsbg='rsync -av --delete $HOME/Obrazy/bg/ $HOME/.local/share/omarchy/themes/catppuccin/backgrounds/' # synchronizacja tapet z motywem Catppuccin w Omarchy
 alias backup='backup-tool.sh' # uruchomienie skryptu backupu
 
 alias cpshh='scp -rv' # kopiowanie plików przez SSH (scp) rekurencyjnie, verbose
@@ -178,7 +178,7 @@ alias rsdssh='rsync -avz --delete -e ssh' # jak wyżej, ale z usuwaniem plików 
 alias rsdsshdry='rsync -avz --delete --dry-run -e ssh' # test na sucho dla synchronizacji SSH z usuwaniem
 
 # GIT
-alias mgc='$HOME/Documents/Git/my-git-clone.sh' # własny skrypt do klonowania repozytorium
+alias mgc='$HOME/Dokumenty/Git/my-git-clone.sh' # własny skrypt do klonowania repozytorium
 alias gc='git clone --depth=1' # klonowanie repozytorium bez historii commitów
 alias mga='git add .' # dodanie wszystkich zmian do commita
 alias mgs='git status' # status repozytorium
@@ -187,9 +187,9 @@ alias mgup='mgs
 mga .
 mgcom up
 mgpush' # status + add + commit "up" + push za jednym razem
-alias mgpush='$HOME/Documents/Git/my-git-push.sh' # własny skrypt do push
-alias mgpull='$HOME/Documents/Git/my-git-pull.sh' # własny skrypt do pull
-alias mgacp='$HOME/Documents/Git/my-git-acp.sh' # własny skrypt add+commit+push
+alias mgpush='$HOME/Dokumenty/Git/my-git-push.sh' # własny skrypt do push
+alias mgpull='$HOME/Dokumenty/Git/my-git-pull.sh' # własny skrypt do pull
+alias mgacp='$HOME/Dokumenty/Git/my-git-acp.sh' # własny skrypt add+commit+push
 alias gbf='/usr/bin/git --git-dir=$HOME/.dotdwm/ --work-tree=$HOME fetch origin' # fetch dla repozytorium dotfiles (bare repo)
 
 # Fedora
