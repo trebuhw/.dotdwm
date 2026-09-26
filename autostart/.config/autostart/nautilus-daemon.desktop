@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Nautilus Daemon
+Exec=nautilus --gapplication-service
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
