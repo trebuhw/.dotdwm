@@ -129,9 +129,9 @@ keymap = [
   # Goto
 	{ on = [ "g", "h" ],       run = "cd ~",                                    desc = "Go to the Home directory" },
 	{ on = [ "g", "i" ],       run = "cd ~/'!0 Inbox'",                         desc = "Go to the INBOX directory" },
-	{ on = [ "g", "d" ],       run = "cd ~/Documents",                          desc = "Go to the Documents directory" },
-	{ on = [ "g", "o" ],       run = "cd ~/Pictures",                           desc = "Go to the Pictures directory" },
-	{ on = [ "g", "m" ],       run = "cd ~/Music",                              desc = "Go to the Music directory" },
+	{ on = [ "g", "d" ],       run = "cd ~/Dokumenty",                          desc = "Go to the Documents directory" },
+	{ on = [ "g", "o" ],       run = "cd ~/Obrazy",                           desc = "Go to the Pictures directory" },
+	{ on = [ "g", "m" ],       run = "cd ~/Muzyka",                              desc = "Go to the Music directory" },
 	{ on = [ "g", "O" ],       run = "cd ~/OneDrive",                           desc = "Go to the OneDrive directory" },
 	{ on = [ "g", "a" ],       run = "cd ~/Archiwum",                           desc = "Go to the Archiwum directory" },
 	{ on = [ "g", "g" ],       run = "cd ~/GitHub",                             desc = "Go to the GitHub directory" },
