@@ -3,15 +3,26 @@
 # =========================
 
 # Listowanie plików (eza)
-alias l='eza --tree --level 1 --group-directories-first --icons=auto' # lista katalogi i pliki bez .ukrytych
-alias ls='eza --tree --level 1 --group-directories-first --icons=auto --all' # lista katalogi i pliki z .ukrytymi
-alias la='eza --group-directories-first --icons=auto' # katalogi i pliki bez .ukrytuych
-alias ll='eza --tree --level 1 -lha --group-directories-first --icons=auto' # pełna lista katalogi i pliki z .ukrytymi
-alias ld='eza --tree --level 1 -lhD --icons=auto' # lista pełna tylko katalogi
+alias l='eza -1 --group-directories-first --icons=auto' # katalogi i pliki bez .ukrytych
+alias ls='eza -1 --group-directories-first --icons=auto --all' # katalogi i pliki z .ukrytymi
+alias la='eza -a --group-directories-first --icons=auto' # katalogi i pliki bez .ukrytych
+alias ll='eza -lha --group-directories-first --icons=auto' # pełna lista z .ukrytymi
+alias ld='eza -lhD --icons=auto' # pełna lista tylko katalogi
 alias lda='eza -a --sort name --icons=auto' # katalogi i pliki z ukrytymi
-alias lt='eza --tree --level 1 --icons=auto' # lista bez ukrytych bez sortowania najpierw katalogi
-alias lp='eza --sort name --icons=auto --tree -L' # lista bez ukrytych, podaj poziom i ścieżkę
-alias lpa='eza --sort name --icons=auto --tree --all -L' # lista z ukrytymi, podaj poziom i ścieżkę
+alias lt='eza --icons=auto' # lista bez ukrytych, bez grupowania katalogów
+alias lp='eza --sort name --icons=auto --recurse -L' # rekurencyjnie bez ukrytych, podaj poziom i ścieżkę
+alias lpa='eza --sort name --icons=auto --recurse --all -L' # rekurencyjnie z ukrytymi, podaj poziom i ścieżkę
+
+# Listowanie plików (eza - tree)
+# alias l='eza --tree --level 1 --group-directories-first --icons=auto' # lista katalogi i pliki bez .ukrytych
+# alias ls='eza --tree --level 1 --group-directories-first --icons=auto --all' # lista katalogi i pliki z .ukrytymi
+# alias la='eza --group-directories-first --icons=auto' # katalogi i pliki bez .ukrytuych
+# alias ll='eza --tree --level 1 -lha --group-directories-first --icons=auto' # pełna lista katalogi i pliki z .ukrytymi
+# alias ld='eza --tree --level 1 -lhD --icons=auto' # lista pełna tylko katalogi
+# alias lda='eza -a --sort name --icons=auto' # katalogi i pliki z ukrytymi
+# alias lt='eza --tree --level 1 --icons=auto' # lista bez ukrytych bez sortowania najpierw katalogi
+# alias lp='eza --sort name --icons=auto --tree -L' # lista bez ukrytych, podaj poziom i ścieżkę
+# alias lpa='eza --sort name --icons=auto --tree --all -L' # lista z ukrytymi, podaj poziom i ścieżkę
 
 # Nawigacja (zoxide + cd)
 alias ze='zoxide edit' # przejdź przez zoxide i pokaż katalog
