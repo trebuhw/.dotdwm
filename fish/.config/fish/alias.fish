@@ -5,7 +5,7 @@
 # Listowanie plików (eza)
 alias l='eza -1 --group-directories-first --icons=auto' # katalogi i pliki bez .ukrytych
 alias ls='eza -1 --group-directories-first --icons=auto --all' # katalogi i pliki z .ukrytymi
-alias la='eza -a --group-directories-first --icons=auto' # katalogi i pliki bez .ukrytych
+alias la='eza -a --group-directories-first --icons=auto --all' # katalogi i pliki bez .ukrytych
 alias ll='eza -lha --group-directories-first --icons=auto' # pełna lista z .ukrytymi
 alias ld='eza -lhD --icons=auto' # pełna lista tylko katalogi
 alias lda='eza -a --sort name --icons=auto' # katalogi i pliki z ukrytymi
