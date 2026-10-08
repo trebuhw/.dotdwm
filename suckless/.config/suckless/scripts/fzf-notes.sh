@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Ścieżka do folderu z notatkami
-NOTES_DIR="$HOME/Documents/Notes"
+NOTES_DIR="$HOME/Dokumenty/Notes"
 
 # Utworzenie folderu, jeśli nie istnieje
 mkdir -p "$NOTES_DIR"
