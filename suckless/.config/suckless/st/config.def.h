@@ -5,12 +5,12 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrainsMono Nerd Font:size=12:antialias=true:autohint=true";
+static char *font = "JetBrainsMono Nerd Font:size=13:antialias=true:autohint=true";
 static char *font2[] = {
-	"JetBrainsMono Nerd Font:size=12:antialias=true:autohint=true",
-	"Noto Color Emoji:size=12:antialias=true",
-	"Noto Sans Symbols 2:size=12:antialias=true",
-	"Noto Sans Math:size=12:antialias=true",
+	"JetBrainsMono Nerd Font:size=13:antialias=true:autohint=true",
+	"Noto Color Emoji:size=13:antialias=true",
+	"Noto Sans Symbols 2:size=13:antialias=true",
+	"Noto Sans Math:size=13:antialias=true",
 };
 static int borderpx = 2;
 

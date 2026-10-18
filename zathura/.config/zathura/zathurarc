@@ -1,4 +1,4 @@
-set font "JetBrainsMono Nerd Font 10"
+set font "JetBrainsMono Nerd Font 13"
 set window-title-basename "true"
 set selection-clipboard "clipboard"
 

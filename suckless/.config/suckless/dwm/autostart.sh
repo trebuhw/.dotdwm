@@ -43,5 +43,11 @@ clipboard.sh --daemon &
 # OneDrive (rclone) - mount + rozgrzewanie cache w tle
 # ~/.config/suckless/scripts/rclone-onedrive-start.sh &
 
+# Bluetoth manager applet
+# (sleep 36 && blueman-applet) &
+
+# Network manager applet
+# (sleep 35 && nm-applet) &
+
 # Włączenie klawisza numloc
 numlockx on

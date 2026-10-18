@@ -15,7 +15,7 @@
   text-color: @fg;
 }
 configuration {
-  font: "JetBrains Mono Nerd Font 12";
+  font: "JetBrains Mono Nerd Font 13";
   terminal: "ghostty";
 
   combi {
@@ -68,7 +68,7 @@ window {
     y-offset:                    0px;
 
     /* properties for all widgets */
-    font:                        "JetBrains Mono Nerd Font 12";
+    font:                        "JetBrains Mono Nerd Font 13";
     enabled:                     true;
     margin:                      0px;
     padding:                     0px;

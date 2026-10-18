@@ -4,7 +4,7 @@ st.alpha: 1.0
 ! st.alphaOffset: 1.0
 
 !! Set a default font and font size as below:
-st.font: JetBrainsMono Nerd Font:size=12
+st.font: JetBrainsMono Nerd Font:size=13
 
 !! Cursor theme & size
 !! Xcursor.theme: Bibata-Modern-Ice
