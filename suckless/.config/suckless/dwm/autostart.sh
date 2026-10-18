@@ -34,6 +34,9 @@ run ~/.config/suckless/scripts/battery-monitor.sh
 pkill -f clipboard.sh
 clipboard.sh --daemon &
 
+# Pcloud drive
+~/.config/pcloud/pcloud-launcher.sh &
+
 # Google Drive (rclone) - mount + rozgrzewanie cache w tle
 # ~/.config/suckless/scripts/rclone-gdrive-start.sh &
 

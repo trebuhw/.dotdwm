@@ -24,4 +24,38 @@
 	<directories/>
 	<text-files/>
 </action>
+<action>
+    <icon>appimagekit-pcloud</icon>
+    <name>Upload to pCloud</name>
+    <submenu></submenu>
+    <unique-id>pcloud-upload-action</unique-id>
+    <command>"/home/hubert/.config/pcloud/pcloud-launcher.sh" --upload-files %F</command>
+    <description>Upload selected files or folders to pCloud</description>
+    <range>*</range>
+    <patterns>*</patterns>
+    <startup-notify/>
+    <directories/>
+    <audio-files/>
+    <image-files/>
+    <other-files/>
+    <text-files/>
+    <video-files/>
+  </action>
+<action>
+    <icon>appimagekit-pcloud</icon>
+    <name>Share link</name>
+    <submenu></submenu>
+    <unique-id>pcloud-share-link-action</unique-id>
+    <command>"/home/hubert/.config/pcloud/pcloud-launcher.sh" --share-link %F</command>
+    <description>Create a pCloud share link for the selected files or folders</description>
+    <range>*</range>
+    <patterns>*</patterns>
+    <startup-notify/>
+    <directories/>
+    <audio-files/>
+    <image-files/>
+    <other-files/>
+    <text-files/>
+    <video-files/>
+  </action>
 </actions>
