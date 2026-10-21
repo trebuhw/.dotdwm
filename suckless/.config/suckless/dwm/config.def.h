@@ -12,8 +12,8 @@ static const int showsystray        = 1;        /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const Bool viewontag         = True;     /* Switch view on tag switch */
-static const char *fonts[]          = { "JetBrainsMono Nerd Font:size=12" };
-static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=12";
+static const char *fonts[]          = { "JetBrainsMono Nerd Font:size=11" };
+static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=11";
 static const char col_gray1[]       = "#1e1e2e";
 /*static const char col_gray2[]       = "#45475a";*/
 static const char col_gray2[]       = "#313244";
@@ -39,7 +39,7 @@ static const Rule rules[] = {
 	{ "Galculator", 			NULL,       NULL,       0,            1,           -1,        1550,730,10, 10,      -1 },
 	{ "pavucontrol",      NULL,       NULL,       0,            1,           -1, 				485,190,950,700, 		  -1 },
 	{ "Thunar", 				  NULL,       NULL,       0,            1,           -1, 				375,135,1170,820, 	  -1 },
-	{ "St", 						  NULL,       NULL,       0,            1,           -1, 				485,190,950,700,  	  -1 },
+	{ "St", 						  NULL,       NULL,       0,            1,           -1, 				410,151,1100,778,  	  -1 },
 	{ "kitty", 					  NULL,       NULL,       0,            1,           -1, 				410,151,1100,778, 	  -1 },
 	{ "gnome-calculator", NULL,       NULL,       0,            1,           -1, 				485,190,385,616, 		  -1 },
 };

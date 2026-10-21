@@ -6,7 +6,7 @@ term = xterm-256color
 
 # fonts
 font-family = JetBrainsMono Nerd Font
-font-size = 13
+font-size = 12
 
 # theme
 theme = Catppuccin Mocha
@@ -25,7 +25,7 @@ cursor-color = cdd6f4
 # appearance
 window-theme = ghostty
 window-decoration = client
-adjust-cell-height = 5%
+# adjust-cell-height = 5%
 background-opacity = 1.0
 background-blur = true
 window-padding-balance = true
