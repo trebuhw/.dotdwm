@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Ścieżka do folderu z notatkami
-NOTES_DIR="$HOME/!0 Inbox"
+NOTES_DIR="$HOME/pCloudDrive/!0 Inbox/"
 
 # Utworzenie folderu, jeśli nie istnieje
 mkdir -p "$NOTES_DIR"

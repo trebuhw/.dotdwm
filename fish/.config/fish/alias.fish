@@ -154,7 +154,7 @@ alias repho='rename-photos.sh' # skrypt do zmiany nazw zdjęć
 
 # Foldery / szybka nawigacja
 alias hom='cd $HOME/ && ls' # przejdź do katalogu domowego
-alias in='cd $HOME/!0\ Inbox/ && ls' # przejdź do folderu Inbox
+alias in='cd $HOME/pCloudDrive/!0\ Inbox/ && ls' # przejdź do folderu Inbox
 alias dok='cd $HOME/Dokumenty/ && ls' # przejdź do folderu Dokumenty
 alias cno='cd $HOME/Dokumenty/Notes/ && ls' # przejdź do folderu Dokumenty
 alias gh='cd $HOME/GitHub/ && ls' # przejdź do folderu GitHub

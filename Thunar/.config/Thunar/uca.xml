@@ -58,4 +58,17 @@
     <text-files/>
     <video-files/>
   </action>
+<action>
+    <icon>appimagekit-pcloud</icon>
+    <name>Edit in pDocs</name>
+    <submenu></submenu>
+    <unique-id>pcloud-open-document-action</unique-id>
+    <command>"/home/hubert/.config/pcloud/pcloud-launcher.sh" --open-document %f</command>
+    <description>Edit this document in the pCloud online editor</description>
+    <range>1-1</range>
+    <patterns>*.csv;*.djvu;*.doc;*.docm;*.docx;*.docxf;*.dot;*.dotm;*.dotx;*.dps;*.dpt;*.epub;*.et;*.ett;*.fb2;*.fodp;*.fods;*.fodt;*.htm;*.html;*.md;*.mht;*.odp;*.ods;*.odt;*.oform;*.otp;*.ots;*.ott;*.oxps;*.pdf;*.pot;*.potm;*.potx;*.pps;*.ppsm;*.ppsx;*.ppt;*.pptm;*.pptx;*.rtf;*.sxc;*.sxi;*.txt;*.xls;*.xlsb;*.xlsm;*.xlsx;*.xlt;*.xltm;*.xltx;*.xml;*.xps</patterns>
+    <startup-notify/>
+    <other-files/>
+    <text-files/>
+  </action>
 </actions>

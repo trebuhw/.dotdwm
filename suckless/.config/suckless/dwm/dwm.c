@@ -1631,7 +1631,7 @@ removesystrayicon(Client *i)
 	if (!showsystray || !i)
 		return;
 	for (ii = &systray->icons; *ii && *ii != i; ii = &(*ii)->next);
-	if (ii)
+	if (*ii)
 		*ii = i->next;
 	free(i);
 }
@@ -2123,7 +2123,7 @@ setup(void)
 	if (!drw_fontset_create(drw, fonts, LENGTH(fonts)))
 		die("no fonts could be loaded.");
 	lrpad = drw->fonts->h;
-	bh = drw->fonts->h + 2;
+	bh = MAX(drw->fonts->h + 2, 24); /* min. 24 px: Qt tray icons (pCloud) wymagaja min. 24x24 */
 	updategeom();
 	/* init atoms */
 	utf8string = XInternAtom(dpy, "UTF8_STRING", False);
@@ -2631,24 +2631,14 @@ updatestatus(void)
 void
 updatesystrayicongeom(Client *i, int w, int h)
 {
-	if (i) {
-		i->h = bh;
-		if (w == h)
-			i->w = bh;
-		else if (h == bh)
-			i->w = w;
-		else
-			i->w = (int) ((float)bh * ((float)w / (float)h));
-		applysizehints(i, &(i->x), &(i->y), &(i->w), &(i->h), False);
-		/* force icons into the systray dimensions if they don't want to */
-		if (i->h > bh) {
-			if (i->w == i->h)
-				i->w = bh;
-			else
-				i->w = (int) ((float)bh * ((float)i->w / (float)i->h));
-			i->h = bh;
-		}
-	}
+	if (!i)
+		return;
+	/* ikona zawsze ma wysokosc paska; szerokosc z proporcji */
+	i->h = bh;
+	if (w <= 0 || h <= 0 || w == h)
+		i->w = bh;
+	else
+		i->w = MAX(1, (int)((float)bh * ((float)w / (float)h) + 0.5f));
 }
 
 void

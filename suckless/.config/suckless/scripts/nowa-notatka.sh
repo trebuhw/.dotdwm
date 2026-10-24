@@ -28,7 +28,7 @@ if [ ! -t 0 ]; then
   fi
 fi
 
-NOTES_DIR="$HOME/!0 Inbox"
+NOTES_DIR="$HOME/pCloudDrive/!0 Inbox/"
 EXT=".md"
 
 mkdir -p "$NOTES_DIR"

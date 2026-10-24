@@ -3,7 +3,7 @@
 
 # Jeśli przekazano flagę "-s", to używamy trybu zaznaczenia, w przeciwnym razie full
 MODE=$1
-TARGET="$HOME/!0 Inbox"
+TARGET="$HOME/pCloudDrive/!0 Inbox/"
 NAME="screenshot"
 
 mkdir -p "$TARGET"

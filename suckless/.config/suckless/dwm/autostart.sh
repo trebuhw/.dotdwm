@@ -35,7 +35,7 @@ pkill -f clipboard.sh
 clipboard.sh --daemon &
 
 # Pcloud drive
-# ~/.config/pcloud/pcloud-launcher.sh &
+~/.config/pcloud/pcloud-launcher.sh &
 
 # Google Drive (rclone) - mount + rozgrzewanie cache w tle
 # ~/.config/suckless/scripts/rclone-gdrive-start.sh &
