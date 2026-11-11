@@ -154,9 +154,13 @@ alias repho='rename-photos.sh' # skrypt do zmiany nazw zdjęć
 
 # Foldery / szybka nawigacja
 alias hom='cd $HOME/ && ls' # przejdź do katalogu domowego
-alias in='cd $HOME/pCloudDrive/!0\ Inbox/ && ls' # przejdź do folderu Inbox
+alias in='cd $HOME/OneDrive/!0\ Inbox/ && ls' # przejdź do folderu Inbox
+alias od='cd $HOME/OneDrive/ && ls' # przejdź do folderu pCloudDrive
+alias odp='cd $HOME/OneDrive/01\ Projects/ && ls' # przejdź do folderu pCloudDrive
+alias oda='cd $HOME/OneDrive/02\ Areas/ && ls' # przejdź do folderu pCloudDrive
+alias odr='cd $HOME/OneDrive/03\ Resources/ && ls' # przejdź do folderu pCloudDrive
 alias dok='cd $HOME/Dokumenty/ && ls' # przejdź do folderu Dokumenty
-alias cno='cd $HOME/Dokumenty/Notes/ && ls' # przejdź do folderu Dokumenty
+alias odn='cd $HOME/OneDrive/02\ Areas/Notes/ && ls' # przejdź do folderu Dokumenty
 alias gh='cd $HOME/GitHub/ && ls' # przejdź do folderu GitHub
 alias ghm='cd $HOME/GitHub/Moje/ && ls' # przejdź do folderu z własnymi repozytoriami
 alias ghf='cd $HOME/GitHub/Moje/fedora/ && ls' # przejdź do folderu repozytorium fedora
